@@ -18,6 +18,14 @@ def int_func1(text):
 
 #print(int_func(input('Введите слово: ')))
 
-print(int_func1(input('Введите слова через пробел: ').split()))
+#print(int_func1(input('Введите слова через пробел: ').split()))
+
+#Решение препода
+
+def int_word(word):
+    return word.capitalize()
+
+word_string = input('Введите слова через пробел: ')
+print(' '.join(map(int_word,word_string.split())))
 
 
