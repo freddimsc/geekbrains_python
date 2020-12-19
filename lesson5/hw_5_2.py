@@ -3,7 +3,7 @@
 
 with open('text_test.txt',"r") as text_t:
     text = text_t.read()
-    print(f"текст с нашего файла : \n {text}")
+    print(f"Текст  файла : \n {text} \n")
     text_t.seek(0)
     content = text_t.readlines()
     print(f'Количество строк в файле - {len(content)} ')
