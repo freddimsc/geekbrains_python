@@ -8,7 +8,7 @@ b = int(input("Введите произвольное число делител
 def func_1(a,b):
     try:
         return a / b
-    except ZeroDivisionError:
-        print('Error!')
+    except ZeroDivisionError as err:
+        print('Error!',err)
 
 print(f'Ответ : {func_1(a, b)}')
